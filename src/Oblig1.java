@@ -1,81 +1,14 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 public class Oblig1 {
 
     public static void main(String[] args) {
-        System.out.println("Hei AlgDat 2018");
-
-        int[] arr = new int[]{1, 22, 11, 80, 10, 2};
-        int[] arrCopy = new int[]{1, 22, 11, 80, 10, 2};
-        int[] arr2 = new int[]{3, 3, 4, 5, 5, 6, 7, 7, 7, 8};
-        int[] arr3 = new int[]{5, 3, 7, 4, 3, 5, 7, 8, 6, 7};
-
-        // FOR OPPGAVE 1
-        System.out.println("Før ");
-        printArray(arr);
-        int maks = maks(arr);
-        int antallOmbytter = ombyttinger(arrCopy);
-        System.out.println("Oppgave 1");
-        System.out.println("Maks verdi fra tabellen : " + maks);
-        System.out.println("Antall Ombytting : " + antallOmbytter);
-        System.out.println("Etter ");
-        printArray(arr);
-
-        // FOR OPPGAVE 2
-        System.out.println("Oppgave 2");
-        printArray(arr2);
-        System.out.println("Antall ulike verdier :" + antallUlikeSortert(arr2));
-        System.out.println("Oppgave 3");
-        printArray(arr3);
-        System.out.println("Antall ulike verdier :" + antallUlikeUsortert(arr3));
-
-        /*
-        // FOR OPPGAVE 5
-        int[] a = {6, 10, 9, 4, 1, 3, 8, 5, 2, 7};
-        delsortering(a);
-        System.out.println(Arrays.toString(a));*/
-
-
-        /*
-        // FOR OPPGAVE 6
-        char[] chars = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-        System.out.println(Arrays.toString(chars));
-        rotasjon(chars, -103);
-        System.out.println(Arrays.toString(chars));*/
-
-        /*// FOR OPPGAVE 7.a
-        String a = flett("ABC", "DEFGH");
-        String b = flett("IJKLMN", "OPQ");
-        String c = flett("", "AB");
-        System.out.println(a + " " + b + " " + c);*/
-
-       /* // FOR OPPDAVE 7.b
-        String a = flett("AM ", "L", "GEDS", "ORATKRR", "", "R TRTE", "IO", "TGAUU");
-        System.out.println(a);*/
-
-        /*// FOR OPPDAVE 8
-        int[] a = {6, 10, 16, 11, 7, 12, 3, 9, 8, 5};
-        int[] indeks = indekssortering(a);
-        System.out.println(Arrays.toString(a)); // skriver ut a
-        System.out.println(Arrays.toString(indeks)); // skriver ut indeks*/
-
-        /*// FOR OPPDAVE 9
-        int[] a = {16, 6, 10, 16, 11, 7, 12, 3, 9, 8, 5};
-        int[] tredjeMin = tredjeMin(a);
-        System.out.println(Arrays.toString(tredjeMin));*/
-
-        /*// FOR OPPGAVE 10
-        String str1 = "ABBA";
-        String str2 = "RABARBRA";
-        String str3 = "BARBERER";
-        System.out.println("Må være sant: " + inneholdt(str1, str2));
-        System.out.println("Må ikke være sant : " + inneholdt(str1, str3));*/
-
 
     }
 
-    private static int ombyttinger(int[] a) {
+    public static int ombyttinger(int[] a) {
 
         int ombyttinger = 0;
 
@@ -96,7 +29,7 @@ public class Oblig1 {
     }
 
     //oppgave 1
-    private static int maks(int[] a) {
+    public static int maks(int[] a) {
 
         if (a.length < 1)
             throw new java.util.NoSuchElementException("Tabellen er tom");
@@ -113,28 +46,18 @@ public class Oblig1 {
         return a[a.length - 1];
     }
 
-    private static void printArray(int[] a) {
-        System.out.print("[");
-        if (a.length > 0) {
-            System.out.print(a[0]);
-        }
-        for (int i = 1; i < a.length; i++) {
-            System.out.print(" , " + a[i]);
-        }
-        System.out.println("]");
-        System.out.println();
-    }
-
     //oppgave 2
     public static int antallUlikeSortert(int[] a) {
 
-        if (a.length > 1) {
+        if (a.length == 1) return 1;
+        else if (a.length > 1) {
             int antallUlikeVerdier = 1;
             for (int i = 0; i < a.length - 1; i++) {
                 if (a[i] > a[i + 1]) {
                     throw new IllegalStateException("Tabellen må være sortert stigende");
+                }
 
-                } else if (a[i] != a[i + 1]) {
+                if (a[i] != a[i + 1]) {
                     antallUlikeVerdier++;
                 }
 
@@ -146,26 +69,26 @@ public class Oblig1 {
     }
 
     //oppgave 3
-    private static int antallUlikeUsortert(int[] a) {
+    public static int antallUlikeUsortert(int[] a) {
 
         int antallULikeVerdier = 0;
-        boolean isEqual = false;
+        boolean isEqual;
 
-        if (a.length > 1) {
-
-            for (int i = 0; i < a.length - 1; i++) {
+        if (a.length < 1) return 0;
+        else if (a.length == 1) return 1;
+        else {
+            for (int i = 0; i < a.length; i++) {
                 isEqual = false;
-                for (int j = i + 1; j < a.length - 1; j++) {
+                for (int j = i + 1; j < a.length; j++) {
                     if (a[i] == a[j]) {
                         isEqual = true;
                         break;
                     }
                 } // end of j for....
                 if (!isEqual) antallULikeVerdier++;
-
             } // end of i for
-
         }
+
         return antallULikeVerdier;
     }
 
@@ -204,15 +127,14 @@ public class Oblig1 {
         if (a.length < 1) return;
         char temp;
 
-        for (int i = a.length - 1; i > 1; i--) {
-            temp = a[i];
-            a[i] = a[i - 1];
-            a[i - 1] = temp;
+        temp = a[a.length - 1];
+        for (int j = a.length - 1; j >= 0; j--) {
+            if (j == 0) {
+                a[j] = temp;
+            } else {
+                a[j] = a[(j - 1 + a.length) % a.length];
+            }
         }
-
-        temp = a[0];
-        a[0] = a[1];
-        a[1] = temp;
     }
 
     //oppgave 6
@@ -275,12 +197,14 @@ public class Oblig1 {
     //oppgave 7.b
     public static String flett(String... s) {
         String outputString = "";
+
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s.length; j++) {
                 if (s[j].length() > i)
                     outputString += s[j].charAt(i);
             }
         }
+
         return outputString;
     }
 
