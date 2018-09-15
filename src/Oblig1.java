@@ -1,12 +1,10 @@
+import com.sun.tools.corba.se.idl.StringGen;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 public class Oblig1 {
-
-    public static void main(String[] args) {
-
-    }
 
     public static int ombyttinger(int[] a) {
 
@@ -197,8 +195,13 @@ public class Oblig1 {
     //oppgave 7.b
     public static String flett(String... s) {
         String outputString = "";
-
+        int maxAntalIString = 0;
         for (int i = 0; i < s.length; i++) {
+            if (s[i].length() > maxAntalIString)
+                maxAntalIString = s[i].length();
+        }
+
+        for (int i = 0; i < maxAntalIString; i++) {
             for (int j = 0; j < s.length; j++) {
                 if (s[j].length() > i)
                     outputString += s[j].charAt(i);
@@ -235,27 +238,36 @@ public class Oblig1 {
         if (length < 3) throw
                 new NoSuchElementException("tabelen må ha minste 3 verdier");
 
-        int[] lav = new int[3];
-        for (int n = 0; n < 3; n++) {
-            lav[n] = 0;
-            for (int i = n; i < length; i++) {
-                if (a[i] < a[lav[n]]) {
+        int[] lavIndex = new int[3];
+        int[] lavVerdi = new int[3];
 
-                    boolean isIndexUsedBefore = false;
-                    for (int j = 0; j < n; j++) {
-                        if (a[i] == a[lav[j]]) {
-                            isIndexUsedBefore = true;
+        for (int n = 0; n <= 2; n++) {
+            lavVerdi[n] = Integer.MAX_VALUE;
+            for (int i = 0; i < length; i++) {
+                if (a[i] < lavVerdi[n]) {
+
+                    boolean isIndexPresent = false;
+                    for (int n1 = 0; n1 < n; n1++) {
+                        if (i == lavIndex[n1]) {
+                            isIndexPresent = true;
                         }
                     }
-                    if (!isIndexUsedBefore) {
-                        lav[n] = i;
+                    if (!isIndexPresent) {
+                        lavVerdi[n] = a[i];
+                        lavIndex[n] = i;
                     }
                 }
             }
         }
-        return lav;
+        return lavIndex;
     }
 
+    public static void main(String[] args) {
+
+        int[] a = {1, 2, 3};
+        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(tredjeMin(a)));
+    }
     //oppdave 10
     public static boolean inneholdt(String a, String b) {
         if (a.length() < 1) return true;
