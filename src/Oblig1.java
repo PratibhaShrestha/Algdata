@@ -90,13 +90,18 @@ public class Oblig1 {
         return antallULikeVerdier;
     }
 
+    public static void main(String[] args) {
+
+        int[] arr = {1, 4, 3, 45, 789, 54, 331, 65, 98};
+        System.out.println(Arrays.toString(arr));
+        delsortering(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
     //oppgave 4
     public static void delsortering(int[] a) {
 
         if (a.length < 1) return;
-
-        Arrays.sort(a);
-
         int oddIndex = 0, temp;
 
         for (int i = 0; i < a.length; i++) {
@@ -108,16 +113,8 @@ public class Oblig1 {
                 oddIndex++;
             }
         }
-
-        for (int i = oddIndex; i < a.length; i++) {
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[i] > a[j]) {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
-        }
+        Arrays.sort(a, 0, oddIndex);
+        Arrays.sort(a, oddIndex, a.length);
     }
 
     //oppgave 5
@@ -262,31 +259,26 @@ public class Oblig1 {
         return lavIndex;
     }
 
-    public static void main(String[] args) {
-
-        int[] a = {1, 2, 3};
-        System.out.println(Arrays.toString(a));
-        System.out.println(Arrays.toString(tredjeMin(a)));
-    }
     //oppdave 10
     public static boolean inneholdt(String a, String b) {
         if (a.length() < 1) return true;
 
         int[] bruktIndex = new int[a.length()];
+        boolean isMatch, isIndexUsedBefore;
 
         if (a.length() > b.length())
             return false;
         else {
             int i;
             for (i = 0; i < a.length(); i++) {
-                boolean isMatch = false;
+                isMatch = false;
                 for (int j = 0; j < b.length(); j++) {
                     if (a.charAt(i) == b.charAt(j)) {
-
-                        boolean isIndexUsedBefore = false;
+                        isIndexUsedBefore = false;
                         for (int br = 0; br < i; br++) {
                             if (j == bruktIndex[br]) {
                                 isIndexUsedBefore = true;
+                                break;
                             }
                         }
                         if (!isIndexUsedBefore) {
@@ -294,12 +286,11 @@ public class Oblig1 {
                             bruktIndex[i] = j;
                             break;
                         }
-
                     }
                 }
                 if (!isMatch) return false;
             }
-            return i == a.length();
+            return true;
         }
     }
 

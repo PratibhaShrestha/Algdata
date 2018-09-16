@@ -32,11 +32,11 @@ public class Oblig1Test {
         */
 
 
-        //antallFeil += oppgave4();
+        antallFeil += oppgave4();
         //antallFeil += oppgave6();
 
 
-        antallFeil += oppgave10();
+        //antallFeil += oppgave10();
 
         if (antallFeil == 0) {
             System.out.println("Gratulerer!! Du passerte testen!");

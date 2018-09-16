@@ -17,20 +17,19 @@
     <SUITE FILE_PATH="coverage/Algdata$Oblig1Test.coverage" NAME="Oblig1Test Coverage Results" MODIFIED="1536936810880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.43223444">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Oblig1Test.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Oblig1Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-117">
-                  <caret line="829" column="34" lean-forward="true" selection-start-line="829" selection-start-column="34" selection-end-line="829" selection-end-column="34" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#30477#0" expanded="true" />
                     <element signature="method#oppgave1#0;class#Oblig1Test#0" expanded="false" />
                     <element signature="method#oppgave2#0;class#Oblig1Test#0" expanded="false" />
                     <element signature="method#oppgave3#0;class#Oblig1Test#0" expanded="false" />
-                    <element signature="method#oppgave4#0;class#Oblig1Test#0" expanded="false" />
                     <element signature="method#oppgave5#0;class#Oblig1Test#0" expanded="false" />
                     <element signature="method#oppgave6#0;class#Oblig1Test#0" expanded="false" />
                     <element signature="method#oppgave7#0;class#Oblig1Test#0" expanded="false" />
@@ -48,21 +47,21 @@
           <file leaf-file-name="Oblig1.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Oblig1.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="423">
-                  <caret line="271" column="35" lean-forward="false" selection-start-line="271" selection-start-column="26" selection-end-line="271" selection-end-column="35" />
+                <state relative-caret-position="496">
+                  <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#ombyttinger#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#maks#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#antallUlikeSortert#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#antallUlikeUsortert#0;class#Oblig1#0" expanded="false" />
-                    <element signature="method#delsortering#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#rotasjon#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#rotasjon#1;class#Oblig1#0" expanded="false" />
                     <element signature="method#flett#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#flett#1;class#Oblig1#0" expanded="false" />
                     <element signature="method#indekssortering#0;class#Oblig1#0" expanded="false" />
                     <element signature="method#getIndexOf#0;class#Oblig1#0" expanded="false" />
+                    <element signature="method#tredjeMin#0;class#Oblig1#0" expanded="false" />
+                    <element signature="method#inneholdt#0;class#Oblig1#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -396,7 +395,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1865828" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20125785" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26996806" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -423,7 +422,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -434,17 +433,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#ombyttinger#0;class#Oblig1#0" expanded="false" />
             <element signature="method#maks#0;class#Oblig1#0" expanded="false" />
             <element signature="method#antallUlikeSortert#0;class#Oblig1#0" expanded="false" />
             <element signature="method#antallUlikeUsortert#0;class#Oblig1#0" expanded="false" />
-            <element signature="method#delsortering#0;class#Oblig1#0" expanded="false" />
             <element signature="method#rotasjon#0;class#Oblig1#0" expanded="false" />
             <element signature="method#rotasjon#1;class#Oblig1#0" expanded="false" />
             <element signature="method#flett#0;class#Oblig1#0" expanded="false" />
             <element signature="method#flett#1;class#Oblig1#0" expanded="false" />
             <element signature="method#indekssortering#0;class#Oblig1#0" expanded="false" />
             <element signature="method#getIndexOf#0;class#Oblig1#0" expanded="false" />
+            <element signature="method#tredjeMin#0;class#Oblig1#0" expanded="false" />
+            <element signature="method#inneholdt#0;class#Oblig1#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -497,14 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="655" column="16" lean-forward="false" selection-start-line="655" selection-start-column="16" selection-end-line="655" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -524,37 +515,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1737">
+          <caret line="1776" column="18" lean-forward="true" selection-start-line="1776" selection-start-column="18" selection-end-line="1776" selection-end-column="18" />
+          <folding>
+            <element signature="e#66457#66458#0" expanded="false" />
+            <element signature="e#66495#66496#0" expanded="false" />
+            <element signature="e#82971#82972#0" expanded="false" />
+            <element signature="e#83020#83021#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Oblig1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="271" column="35" lean-forward="false" selection-start-line="271" selection-start-column="26" selection-end-line="271" selection-end-column="35" />
+        <state relative-caret-position="496">
+          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#ombyttinger#0;class#Oblig1#0" expanded="false" />
             <element signature="method#maks#0;class#Oblig1#0" expanded="false" />
             <element signature="method#antallUlikeSortert#0;class#Oblig1#0" expanded="false" />
             <element signature="method#antallUlikeUsortert#0;class#Oblig1#0" expanded="false" />
-            <element signature="method#delsortering#0;class#Oblig1#0" expanded="false" />
             <element signature="method#rotasjon#0;class#Oblig1#0" expanded="false" />
             <element signature="method#rotasjon#1;class#Oblig1#0" expanded="false" />
             <element signature="method#flett#0;class#Oblig1#0" expanded="false" />
             <element signature="method#flett#1;class#Oblig1#0" expanded="false" />
             <element signature="method#indekssortering#0;class#Oblig1#0" expanded="false" />
             <element signature="method#getIndexOf#0;class#Oblig1#0" expanded="false" />
+            <element signature="method#tredjeMin#0;class#Oblig1#0" expanded="false" />
+            <element signature="method#inneholdt#0;class#Oblig1#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Oblig1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="829" column="34" lean-forward="true" selection-start-line="829" selection-start-column="34" selection-end-line="829" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#30477#0" expanded="true" />
             <element signature="method#oppgave1#0;class#Oblig1Test#0" expanded="false" />
             <element signature="method#oppgave2#0;class#Oblig1Test#0" expanded="false" />
             <element signature="method#oppgave3#0;class#Oblig1Test#0" expanded="false" />
-            <element signature="method#oppgave4#0;class#Oblig1Test#0" expanded="false" />
             <element signature="method#oppgave5#0;class#Oblig1Test#0" expanded="false" />
             <element signature="method#oppgave6#0;class#Oblig1Test#0" expanded="false" />
             <element signature="method#oppgave7#0;class#Oblig1Test#0" expanded="false" />
